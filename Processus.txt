@@ -1,0 +1,50 @@
+﻿Excel Reader
+
+Introduction:
+
+Now that you have an initial foundation of C#, it’s time to tackle a very important task in programming.
+The ability to work with files.When working in a company, all sorts of documents will be generated using a variety of file types:
+.doc, .xls, .pdf, .csv, just to name a few of the most commonly used.
+
+Your job as a programmer is to create applications that will manipulate data “to and from” these files.
+In this project, we will transpose an excel table into an SQL database using a C# library.
+
+
+Requirements:
+
+- This is an application that will read data from an Excel spreadsheet into a database
+
+- When the application starts, it should delete the database if it exists, create a new one, create all tables, read from Excel, seed into the database.
+
+- You need to use EPPlus package
+
+- You shouldn't read into Json first.
+
+- You can use SQLite or SQL Server (or MySQL if you're using a Mac)
+
+- Once the database is populated, you'll fetch data from it and show it in the console.
+
+- You don't need any user input
+
+- You should print messages to the console letting the user know what the app is doing at that moment (i.e. reading from excel; creating tables, etc)
+
+- The application will be written for a known table, you don't need to make it dynamic.
+
+- When submitting the project for review, you need to include an xls file that can be read by your application.
+
+
+Structure:
+Models:
+	- Headers
+	- Athlete
+DataBase:
+	- Athletes.db
+	- AthleteContext : DBContext
+Controller:
+	- ExcelReader
+	- AthleteController
+	- HeaderController
+Views:
+	- Main program
+	- Console log of what is happening
+	- Confirm on completion before output data
