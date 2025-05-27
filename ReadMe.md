@@ -1,5 +1,5 @@
 # Excel Reader
-_by __smkP13__ for __thecsharpacademy___
+_by Zube Pierre Basali for __thecsharpacademy___
 
 ## Introduction
 This is a simple application that retrieve data from an Excel file and present them at the user.<br>
